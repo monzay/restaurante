@@ -261,7 +261,7 @@ function SeccionTestimonios() {
           ].map((testimonio, index) => (
             <AnimacionAparicion key={index} className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:scale-105">
               <p className="text-xl font-medium mb-4 text-amber-900">{testimonio.nombre}</p>
-              <p className="text-amber-700 mb-6 italic">"{testimonio.comentario}"</p>
+              <p className="text-amber-700 mb-6 italic">{testimonio.comentario}</p>
               <div className="flex items-center">
                 {Array.from({ length: testimonio.calificacion }).map((_, i) => (
                   <Star key={i} className="w-6 h-6 fill-current text-amber-500" />
